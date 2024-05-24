@@ -1,0 +1,115 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+:root {
+        --textutama:  #232e35;
+        --textkedua:  #656d72;
+
+        --bordercolor: #f1f1f1;
+        --linecolor: #d9d9d9;
+
+        --backround: #fff;
+        --scndback: #fbfbfb;
+        --thrtback: #f5f5fe;
+
+        --iconutama: #7c74f1;
+        --iconkedua: #5d51e8;
+
+        --secpading: 6rem 0 ;
+
+        --itemborderraduis: 0.7rem;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "JetBrains Mono", monospace;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--textutama);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+p,span,label,input,textarea,li{
+    color: var(--textkedua);
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0px auto;
+    
+}
+
+/* btn */
+.btn{
+    padding: 1rem 1.5rem;
+    background-color: white;
+    border: 1.5px solid var(--bordercolor);
+    cursor: pointer;
+    transition:0.2s ease-in-out ;
+}
+/* logo dan navbar */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a {
+    color: var(--textutama);
+}
+
+.nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li a {
+    color: var(--textutama);
+}
+
+/* berger */
+
+.burger div {
+width: 25px;
+height: 2px;
+background-color: #000;
+margin: 7px;
+transition: all .3s ;
+z-index: 99;
+}
+
+@media screen and (max-width : 1200px)  {
+    .main-container{
+        width: 90%;
+    }
+}
