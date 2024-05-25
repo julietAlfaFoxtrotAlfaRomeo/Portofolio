@@ -12,7 +12,7 @@
         --scndback: #fbfbfb;
         --thrtback: #f5f5fe;
 
-        --iconutama: #7c74f1;
+        --iconutama: #749DAD;
         --iconkedua: #5d51e8;
 
         --secpading: 6rem 0 ;
@@ -63,6 +63,39 @@ a{
     cursor: pointer;
     transition:0.2s ease-in-out ;
 }
+
+/* title */
+.section-title{
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: var(--textkedua);
+    position: relative;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.pre-title::before{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: var(--linecolor);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid: 3rem;
+}
+
 /* logo dan navbar */
 
 .nav{
@@ -106,6 +139,90 @@ background-color: #000;
 margin: 7px;
 transition: all .3s ;
 z-index: 99;
+}
+
+.burger{
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+/* hero */
+#hero{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-name{
+    font-size: 3rem;
+    font-weight: 700px;
+    margin: 0.5rem 0 1rem;
+}
+
+.hero-name span{
+    color: var(--iconutama);
+}
+.hero-right img {
+    width: 100%;
+    animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.hero-right{
+    display: flex;
+    justify-content: center;
+}
+
+/* service */
+
+#services{
+    background-color: var(--scndback);
+    padding: var(--secpading);
+}
+.services .pre-title{
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+}
+.services-title {
+    text-align: center;
+}
+.service{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--backround);
+    border-radius: var(--itemborderraduis);
+}
+
+.service h4{
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.service-icon{
+    background-color: var(--thrtback);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+.service-icon svg{
+    fill: var(--iconutama);
 }
 
 @media screen and (max-width : 1200px)  {
