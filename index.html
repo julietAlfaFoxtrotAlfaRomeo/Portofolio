@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Jafar shodik - Software Engineer</title>
   </head>
   <body>
@@ -38,15 +40,17 @@
         </div>
 
         <section id="hero">
-          <div class="hero-left">
+          <div data-aos="fade-right" data-aos-duration="2000" class="hero-left">
             <h3 class="pre-title">My name is</h3>
             <h1 class="hero-name">Jafar Shodik <span>Assegaf</span></h1>
             <p>
-           Creative full-stack developer with more than 5 years of experience in enterprise companies and startups. Proficient in JavaScript, Next, and Node.js. Passionate about UI/UX.
+              Creative front-end developer with more than +5 years of experience
+              in enterprise companies and startups. Proficient in Javascript and
+              React. Passionate about UI/UX.
             </p>
           </div>
 
-          <div class="hero-right">
+          <div data-aos="fade-left" data-aos-duration="2000" class="hero-right">
             <img src="./images/hero.svg" alt="Person Standing" />
           </div>
         </section>
@@ -61,7 +65,7 @@
         <h1 class="section-title services-title">Specialized In</h1>
 
         <div class="grid-3">
-          <div class="service">
+          <div data-aos="fade-up" data-aos-duration="1500" class="service">
             <div class="service-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +85,7 @@
             </p>
           </div>
 
-          <div class="service">
+          <div data-aos="fade-up" data-aos-duration="1800" class="service">
             <div class="service-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +105,7 @@
             </p>
           </div>
 
-          <div class="service">
+          <div data-aos="fade-up" data-aos-duration="2000" class="service">
             <div class="service-icon">
               <svg
                 width="24"
@@ -132,7 +136,7 @@
         <h3 class="pre-title">My Works</h3>
         <h1 class="section-title">Featured Portfolios</h1>
 
-        <div class="grid-3">
+        <div data-aos="fade-right" data-aos-duration="1500" class="grid-3">
           <!-- Portfolio 1 -->
           <div class="portfolio">
             <div class="portfolio-cover">
@@ -143,8 +147,8 @@
             </div>
             <div class="portfolio-info">
               <div class="portfolio-title">
-                <h4>Agency Website</h4>
-                <a href="/" class="portfolio-link">
+                <h4>Indomontir</h4>
+                <a href="indomontir.id" class="portfolio-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -158,13 +162,14 @@
                 </a>
               </div>
               <div class="portfolio-tags">
-                <div>React</div>
+                <div>JS</div>
                 <div>Tailwind</div>
               </div>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                eligendi cupiditate asperiores nam, beatae repudiandae expedita
-                fugit, quos dicta ut unde rerum vero repellat vitae.
+                I have developed a website for Indomontir, utilizing JavaScript
+                for dynamic interactivity and Tailwind CSS for responsive and
+                aesthetic design, ensuring an optimal user experience and a
+                modern appearance.
               </p>
             </div>
           </div>
@@ -179,7 +184,7 @@
             </div>
             <div class="portfolio-info">
               <div class="portfolio-title">
-                <h4>Landing Page</h4>
+                <h4>FORANGGIS</h4>
                 <a href="/" class="portfolio-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -194,13 +199,14 @@
                 </a>
               </div>
               <div class="portfolio-tags">
-                <div>Vue</div>
-                <div>Contentful</div>
+                <div>PHP</div>
+                <div>Bootstrap</div>
               </div>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                eligendi cupiditate asperiores nam, beatae repudiandae expedita
-                fugit, quos dicta ut unde rerum vero repellat vitae.
+                I developed a website for Foranggis (Forum Anak Cimanggis),
+                using PHP for the backend to ensure efficient data handling, and
+                Bootstrap for the frontend to create a responsive, user-friendly
+                interface.
               </p>
             </div>
           </div>
@@ -215,7 +221,7 @@
             </div>
             <div class="portfolio-info">
               <div class="portfolio-title">
-                <h4>Dashboard Admin</h4>
+                <h4>SMK PKP 1</h4>
                 <a href="/" class="portfolio-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -230,13 +236,13 @@
                 </a>
               </div>
               <div class="portfolio-tags">
-                <div>React</div>
-                <div>Materialize</div>
+                <div>PHP</div>
+                <div>Tailwind</div>
               </div>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                eligendi cupiditate asperiores nam, beatae repudiandae expedita
-                fugit, quos dicta ut unde rerum vero repellat vitae.
+                I created a website for SMK PKP, utilizing PHP for the backend
+                to handle data processing efficiently, and Bootstrap for the
+                frontend to provide a responsive and intuitive user experience.
               </p>
             </div>
           </div>
@@ -251,13 +257,17 @@
         <h3 class="pre-title">Learning Path</h3>
         <h1 class="section-title">Skills & Experience</h1>
 
-        <div class="skills-grid">
+        <div data-aos="fade-right" class="skills-grid">
           <div class="skills-left">
             <div class="education">
               <div class="line">
                 <div></div>
               </div>
-              <div class="education-info">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                class="education-info"
+              >
                 <h4 class="education-title">SMK PKP 1</h4>
                 <p>RPL</p>
                 <h4 class="education-years">2022 - 2025</h4>
@@ -267,13 +277,17 @@
               <div class="line">
                 <div></div>
               </div>
-              <div class="education-info">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1550"
+                class="education-info"
+              >
                 <h4 class="education-title">Webpass</h4>
                 <p>Full Stack Developer</p>
                 <h4 class="education-years">2022 - Now</h4>
               </div>
             </div>
-            <div class="education">
+            <div data-aos="fade-up" data-aos-duration="2000" class="education">
               <div class="line">
                 <div></div>
               </div>
@@ -452,7 +466,10 @@
       <p>&#169; 2023 - Made by Jafar A.</p>
     </footer>
     <!-- End Footer -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
